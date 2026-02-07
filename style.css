@@ -15,10 +15,10 @@ body {
 }
 
 .floors-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* 画面が狭いときは縦並びにする */
+    display: flex;            /* 横並びにする魔法の呪文 */
+    justify-content: center;  /* 中央寄せ */
+    gap: 20px;               /* 画像同士の隙間 */
+    flex-wrap: wrap;          /* 画面が狭いときは折り返す */
 }
 
 .floor-card {
