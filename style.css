@@ -14,11 +14,12 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
+/* この部分が「横並び」にする設定です */
 .floors-container {
-    display: flex;            /* 横並びにする魔法の呪文 */
-    justify-content: center;  /* 中央寄せ */
-    gap: 20px;               /* 画像同士の隙間 */
-    flex-wrap: wrap;          /* 画面が狭いときは折り返す */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .floor-card {
