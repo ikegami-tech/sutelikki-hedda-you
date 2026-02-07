@@ -1,0 +1,83 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* マップエリアのスタイル */
+.map-section {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.floors-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* 画面が狭いときは縦並びにする */
+}
+
+.floor-card {
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.floor-image {
+    max-width: 300px; /* 画像サイズ調整 */
+    height: auto;
+    display: block;
+}
+
+/* 予約一覧エリア */
+.reservation-section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------ */
+/* ここがスティッキーヘッダー化の核となる部分です */
+/* ------------------------------------------------ */
+
+.table-wrapper {
+    /* 必要に応じてテーブル自体の高さを制限し、内部スクロールにする場合 */
+    /* max-height: 500px; */ 
+    /* overflow-y: auto; */
+    
+    /* 今回は画面全体スクロールに対してヘッダーを追従させます */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* スティッキーヘッダーの設定 */
+th {
+    position: sticky;
+    top: 0; 
+    background-color: #2c3e50; /* ヘッダーの背景色 */
+    color: #fff;
+    z-index: 10; /* 他の要素より手前に表示 */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4); /* 固定時に少し影をつける */
+}
+
+/* 行のホバーエフェクト */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
